@@ -21,13 +21,13 @@ body{
     min-height: 90vh;
 }
 .box{
-    background: var(--text-color);
+    background: transparent;
     display: flex;
     flex-direction: column;
     padding: 25px 25px;
-    border-radius: 20px;
-    box-shadow: 0 0 128px 0 rgba(0,0,0,0.1),
-                0 32px 64px -48px rgba(0,0,0,0.5);
+    border-radius: 10px;
+    border: 1px solid var(--text-color);
+    box-shadow: 0 0 3 var(--second-bg-color), 
 }
 .form-box{
     width: 450px;
@@ -39,12 +39,12 @@ body{
     padding-bottom: 10px;
     border-bottom: 1px solid var(--text-color);
     margin-bottom: 10px;
+    color: var(--text-color);
 }
 .form-box form .field{
     display: flex;
     margin-bottom: 10px;
     flex-direction: column;
-
 }
 .form-box form .input input{
     height: 40px;
@@ -54,13 +54,18 @@ body{
     border-radius: 5px;
     border: 1px solid var(--text-color);
     outline: none;
+    background-color: var(--second-bg-color);
+    color: var(--text-color);
+}
+label, .links{
+    color: var(--text-color);
 }
 .btn{
     height: 35px;
     background: var(--main-color);
     border: 0;
     border-radius: 5px;
-    color: #fff;
+    color: var(--text-color);
     font-size: 15px;
     cursor: pointer;
     transition: all .3s;
@@ -80,7 +85,7 @@ body{
 /********* Home *****************/
 
 .nav{
-    background: #fff;
+    background: var(--text-color);
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -94,7 +99,7 @@ body{
 }
 .logo a{
     text-decoration: none;
-    color: #000;
+    color: var(--bg-color);
 }
 .right-links a{
     padding: 0 10px;
@@ -134,7 +139,7 @@ main{
 }
 .message{
     text-align: center;
-    background: #f9eded;
+    background: var(--text-color);
     padding: 15px 0px;
     border:1px solid #699053;
     border-radius: 5px;
