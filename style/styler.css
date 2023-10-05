@@ -8,8 +8,8 @@
 :root{
     --bg-color: #101010;
     --second-bg-color: #323946;
-    --text-color: #fff;
-    --main-color: rgba(76,68,182,0.808);
+    --text-color: #ece1d3;
+    --main-color: rgba(76,68,182);
  }
 body{
     background: var(--bg-color);
@@ -93,7 +93,7 @@ label, .links{
     z-index: 100;
 }
 .logo{
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 900;
     
 }
@@ -119,10 +119,12 @@ main{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    color: var(--text-color);
 }
 .bottom{
     width: 100%;
-    margin-top: 20px;
+    margin-top: 30px;
+    color: var(--text-color);
 }
 @media only screen and (max-width:840px){
     .main-box .top{
